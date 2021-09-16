@@ -1,4 +1,4 @@
-// Gathering HTML elements for manipulation
+// Collecting HTML elements for manipulation
 var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScoreEl = document.getElementById("finalScore");
@@ -19,7 +19,7 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
-// Quiz question object
+// Quiz questions object
 var quizQuestions = [{
     question: "How many elements can you apply an 'ID' attribute to?",
     choiceA: "As many as you want",
@@ -94,7 +94,7 @@ function generateQuizQuestion(){
     buttonD.innerHTML = currentQuestion.choiceD;
 };
 
-// Start Quiz function starts the TimeRanges, hides the start button, and displays the first quiz question.
+// Start Quiz function starts the TimeRanges, conceals the start button, and shows the first quiz question.
 function startQuiz(){
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "none";
@@ -112,7 +112,7 @@ function startQuiz(){
       }, 1000);
     quizBody.style.display = "block";
 }
-// This function is the end page screen that displays your score after either completeing the quiz or upon timer run out
+// This function is the end page screen that shows the user's score after either finishing the quiz or when the timer runs out
 function showScore(){
     quizBody.style.display = "none"
     gameoverDiv.style.display = "flex";
@@ -121,8 +121,8 @@ function showScore(){
     finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
 }
 
-// On click of the submit button, we run the function highscore that saves and stringifies the array of high scores already saved in local stoage
-// as well as pushing the new user name and score into the array we are saving in local storage. Then it runs the function to show high scores.
+// On click of the submit button, I run the function highscore that saves and stringifies the array of high scores already saved in local storage
+// as well as pushing the new user name and score into the array I am saving in local storage. Then it runs the function to show high scores.
 submitScoreBtn.addEventListener("click", function highscore(){
     
     
@@ -150,7 +150,7 @@ submitScoreBtn.addEventListener("click", function highscore(){
     
 });
 
-// This function clears the list for the high scores and generates a new high score list from local storage
+// This function clears the list for the high scores and creates a new high score list from local storage
 function generateHighscores(){
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
@@ -213,5 +213,5 @@ function checkAnswer(answer){
     }
 }
 
-// This button starts the quiz!
+// This button initiates the quiz!
 startQuizButton.addEventListener("click",startQuiz);

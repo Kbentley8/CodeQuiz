@@ -13,7 +13,7 @@
     
     p{
         color: black;
-        text-shadow: .5px .5px white;
+        text-shadow: .5px .5px rgb(201, 78, 129);
         text-align: center;
         font-size: xx-large;
         font-family: sans-serif;
@@ -63,7 +63,7 @@
     
     #timer{
         font-family: sans-serif;
-        background-color: #5a69f0;
+        background-color: #2b0e52;
         color: #eeeeee;
         font-size: x-large;
         text-shadow: .5px .5px black;
@@ -104,7 +104,7 @@
         justify-content: space-around;
         border-bottom-style: outset;
         margin-bottom: .5rem;
-        background-color: #5e6df1;
+        background-color: #b86ee9;
         color: #eeeeee;
         font-family: sans-serif;
     }
