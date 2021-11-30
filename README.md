@@ -1,6 +1,10 @@
-# CodeQuiz
+# Code Quiz
 
-In this assignment I was tasked with creating a timer-based quiz that uses high scores to assess the user's knowledge on the fundamental concepts of coding. To complete this assignment I used html, css, and javascript.
+In this project, I  created a timer-based quiz that uses high scores to assess the user's knowledge on the fundamental concepts of coding. To complete this project I used html, css, local storge, and javascript.
+
+# Usage
+
+Click index.html or click the deployment link below
 
 [Link to Code Quiz](https://kbentley8.github.io/homework04-CodeQuiz/)
 
